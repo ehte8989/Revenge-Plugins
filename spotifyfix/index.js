@@ -4,6 +4,7 @@ import { before } from "@vendetta/patcher";
 const SpotifyStore = findByProps("dispatch")
 let unpatch
 
+//forces spotify premium enjoy :)
 export default {
 
     onLoad: () => {
