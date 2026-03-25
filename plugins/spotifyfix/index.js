@@ -10,7 +10,7 @@ export default {
         unpatch = before("dispatch", SpotifyStore, ([action]) => {
             if (
                 action.type === "SPOTIFY_PLAYER_STATE" &&
-                action.payload?.isPremium === undefined
+                action.payload?.isPremium === false
             ) {
                 action.payload.isPremium = true;
             }
